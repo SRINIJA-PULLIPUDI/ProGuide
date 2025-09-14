@@ -7,19 +7,20 @@ Its main goal is to compare product prices across multiple e-commerce platforms 
 
 The platform is especially built with elderly users in mind, as they often face difficulties navigating through different shopping websites and manually checking prices.
 ProGuide reduces this hassle by presenting a single, user-friendly interface where the best price can be quickly identified.
+
 ---
 
 ## Table of Contents
 
-- [Motives]
-- [Features]
-- [Live Site] 
-- [Technologies]
-- [Installation] 
+- [Motive](#motives)
+- [Features](#features)  
+- [Live Site](#live-site)  
+- [Technologies](#technologies)  
+- [Installation](#installation)  
 
 ---
 
-## Motives
+## Motive
 - Help users save time and money while shopping online.
 - Provide an easy-to-use interface suitable for all age groups, especially the elderly.
 - Eliminate the need to visit multiple websites for price comparison.
@@ -43,6 +44,8 @@ ProGuide reduces this hassle by presenting a single, user-friendly interface whe
 You can view the working version of the site here:  
 [ProGuide Live](https://srinija-pullipudi.github.io/ProGuide/)
 
+---
+
 ## Technologies
 
 - HTML (HyperText Markup Language):
@@ -50,6 +53,7 @@ Used to create the structure of the website, including layout, headings, navigat
 - CSS (Cascading Style Sheets):
 Used for styling and design, including colors, fonts, spacing, alignment, responsiveness, and overall visual appeal of the site.
 
+---
 
 ## Installation (Local Development)
 
