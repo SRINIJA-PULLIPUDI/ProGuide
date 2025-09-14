@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Toilet Brush & Holder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--gold-dark);
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+   header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+      font-family: cursive;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: var(--gold-dark);
+      border-radius: 100%;
+      text-align: center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-family: cursive;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1, .app2 {
+      position: relative;
+    }
+
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .shopping-links .amazon {
+      position: absolute;
+      top: 35px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links .flipcart {
+      position: absolute;
+      top: 38px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+   
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./toilet_brush & holder.jpg" alt="Toilet Brush and Holder Set"></center>
+      <div class="product-info">
+        <h2>Toilet Brush with Holder</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Ikea</p>
+        <p style="font-size: 25px;"><strong>Type:</strong> Floor Standing Toilet Brush and Plastic Holder</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/Hardwearing-Durable-Toilet-Brush-Holder/dp/B018MOQVC6/ref=sr_1_19?crid=28RQFSDINCQBB&dib=eyJ2IjoiMSJ9.OKK1ez4AIvZ1uKyg6CR_jO8KFBbUJlME8pnX9d_3pR7GjHj071QN20LucGBJIEps.VMUPH7ZweS9DsRthQmtOQUrkDiSIfzUU2uq3L-xQvCs&dib_tag=se&keywords=Toilet%2Bbrush%2Band%2Bholder&qid=1749207181&s=home-improvement&sprefix=toilet%2Bbrush%2Band%2Bholder%2Chome-improvement%2C324&sr=1-19&xpid=Tj2yvq42U_iUi&th=1" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹194</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/ikea-plastic-toilet-cleaning-brush-holder/p/itm4c41e09364c83?pid=TBSFTCY6MTTV7UWY&lid=LSTTBSFTCY6MTTV7UWYQ2MOD0&marketplace=FLIPKART&q=Ikea+Hardwearing+and+Durable+Toilet+Brush+with+Holder+%28Black%29%2C+Polypropylene%2CPlastic%2CMetal%2CSteel&store=rja%2Fz2d%2Fde2&spotlightTagId=default_TrendingId_rja%2Fz2d%2Fde2&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=cb6ea38f-9371-4ae3-8f9e-6c33ca720125.TBSFTCY6MTTV7UWY.SEARCH&ppt=sp&ppn=sp&ssid=0bgji7viow0000001749225897976&qH=78cba671bd990882" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹209</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>

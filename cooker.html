@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Cooker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+      font-family: cursive;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align:center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+      font-family: cursive;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1{
+      position: relative;
+    }
+    .app2{
+      position: relative;
+    }
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .shopping-links .amazon{
+      position: absolute;
+      top: 35px;
+      left:130px;
+      font-size:27px;
+    }
+
+    .shopping-links .flipcart{
+      position: absolute;
+      top: 38px;
+      left:130px;
+      font-size:27px;
+    }
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./Images/butterflyc.html" alt="Pressure Cooker"></center>
+      <div class="product-info">
+        <h2>Butterfly 3 L Outer Lid Induction Bottom Pressure Cooker  (Aluminium)</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Butterfly</p>
+        <p style="font-size: 25px;"><strong>Type:</strong>Outer Lid Induction</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/Butterfly-Cordial-Induction-Aluminium-Pressure/dp/B07M5NYK2H/ref=sr_1_4_sspa?dib=eyJ2IjoiMSJ9.ojxMEYraihLyeV7k3xL4R8vnxijjaPEWU3GdJzSHDghUqgZwiIUM49dNFf8GpPcGru2XMDLm3sE8duVck1LCQfZznDuYSS9J54Lyoy0vYT9VYjmsGZF2QFuTOT2GIZkP7bR10_pMvRJlfp__96pbgef7APoO2tI421ZPiDBREHdiXbIn-O1A3Wf8y5U-I0JmBa_7EbYxAQqgKG13eXynpOJ3VbZv5gEz8L5jKXTqQP79obGn4hwgBMZtuGTe2FXAuKBAWGASv_ixuYWOQnH7EfFSEsjfMHvvhldNFIIiOdQ.17DHhT5-gSNhIEPIOc_ylB9N36kLRyx1hy1Im5RYWag&dib_tag=se&keywords=butterfly%2Bcooker&qid=1749155449&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹949</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/butterfly-3-l-outer-lid-induction-bottom-pressure-cooker/p/itm3278ca27a290e?pid=PRCEZ9M7CZWTZNZW&lid=LSTPRCEZ9M7CZWTZNZW6WX6SZ&marketplace=FLIPKART&q=Butterfly+Cordial+3+Litres+Pressure+Cooker+%7C+Outer+Lid+%7C+Food+Grade+Virgin+Aluminium+%7C+Induction+%26+Gas+Stove+Compatible+%7C+ISI+Certified+%7C+2+Years+Manufacturers+Warranty+%7C+Silver&store=upp%2Ftnx%2Fgsl&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=3802e64c-1308-4c20-bc9d-2b092c2d6527.PRCEZ9M7CZWTZNZW.SEARCH&ppt=sp&ppn=sp&ssid=rp9azaykk00000001749155602346&qH=3fbfdee5c93478a7" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹1550</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./Images/Cooker.jpeg" alt="Pressure Cooker"></center>
+      <div class="product-info">
+        <h2>Benon Non Induction 3 L Outer Lid Pressure Cooker  (Aluminium)</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Benon</p>
+        <p style="font-size: 25px;"><strong>Type:</strong>Non Induction Base Alluminium</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/BENON-Aluminium-Induction-Compatible-Stove-Combo/dp/B0BMVL8R4K" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹749</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/benon-non-induction-3-l-outer-lid-pressure-cooker/p/itm8256610c3e000?pid=PRCGH8THUEGH6YBK&lid=LSTPRCGH8THUEGH6YBKTKD1GO&marketplace=FLIPKART&q=Cookers&store=upp%2Ftnx%2Fgsl&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_U5HT77fXqOShs2tUF80b5xNnq5T6QUIL5cC9TPnlz8aS_YUwIxbmAowudA4MP98z3R9p6AirIsegwGptm18oPw%3D%3D&ppt=sp&ppn=sp&ssid=84hmpbvj2o0000001749099162733&qH=c5d236617d064b14" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹635</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="product-container">
+    <div class="product-card">
+      <center><img src="./Images/pigeon.jpeg" alt="Pressure Cooker"></center>
+      <div class="product-info">
+        <h2>Pigeon Special 7.5 L Outer Lid Pressure Cooker  (Aluminium)</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Pigeon</p>
+        <p style="font-size: 25px;"><strong>Type:</strong>Non Induction Base Alluminium</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/Pigeon-Stovekraft-14332-Induction-Aluminium/dp/B08RWRG8JW/ref=sr_1_4_sspa?dib=eyJ2IjoiMSJ9.pDisNe0X8zKh2c-HtE8qZK-3gIi3uPPVTPoDb3WzbxNZLqZWklyKNDt8pLgvjeL8feH_sdgZyNGsbC73m0cdSzWFPtkmaFV6DFLGgcN2o4MbUMzeGKpqbXBHt3ypELjwyrklM3jtS1xyprmAIWE0Cd0tVQdgU6RPS8XnNwGaBmDTVXwRDLl6EVAt1o8DRy6sf39hv-RbwsfpXYnDGvPhpUgwp2i1xMfyjWlBhv_KEQoCigYuznKQtukxDoC-zAheUPDvFkwY2OwhhWqwGOl-xt54jjBaFCG5a5xZObA0_6k.rpApPl6iyzrQWpOsvgTepRdEqoRzpCh_kygYJrDZDBc&dib_tag=se&keywords=Pigeon%2BSpecial%2B7.5%2BL%2BOuter%2BLid%2BPressure%2BCooker%2B(Aluminium)&qid=1749154533&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹1,199</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/pigeon-special-7-5-l-outer-lid-pressure-cooker/p/itm097f50b79fd09?pid=PRCFGEH9ACU8MYQ4&lid=LSTPRCFGEH9ACU8MYQ4AALWHW&marketplace=FLIPKART&q=pigeon+cooker&store=upp%2Ftnx%2Fgsl&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=4ece020b-2b56-4ec6-994b-43a72465d69b.PRCFGEH9ACU8MYQ4.SEARCH&ppt=sp&ppn=sp&ssid=caeedi9s1s0000001749154334937&qH=7faab82d31cba657" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹1,199</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ProGuide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

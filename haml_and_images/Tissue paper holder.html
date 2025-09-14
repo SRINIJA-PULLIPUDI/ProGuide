@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Tissue Paper Holder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--gold-dark);
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      position: relative;
+    }
+
+    .title {
+      position: relative;
+      top: 20px;
+      font-family: cursive;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: var(--gold-dark);
+      border-radius: 100%;
+      text-align: center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-family: cursive;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1, .app2 {
+      position: relative;
+    }
+
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .shopping-links .amazon {
+      position: absolute;
+      top: 35px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links .flipcart {
+      position: absolute;
+      top: 38px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+   
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./tissue paper holder.webp" alt="Tissue Paper Holder - Stainless Steel"></center>
+      <div class="product-info">
+        <h2>Tissue Paper Holder</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Plantex</p>
+        <p style="font-size: 25px;"><strong>Type:</strong> Wall-Mounted Stainless Steel Tissue Roll Holder</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/Plantex-Stainless-Bathroom-Kitchen-Accessories/dp/B0967PPWQY/ref=sr_1_4?dib=eyJ2IjoiMSJ9.o0dJzQiHcRiFVsK3weCZKJiBneEtFdrwmxrUy0VowSu8sf24qQQCoghUjibHxerpqrmISFY3SP7czks18sPixU6RkzaWcgInKSvFUDVxDmORVXBw8fCxesefXL96XI336z-osXbPUBEcy5IlQxcXNmG94Otauo4HpIUUTR6VyhZUYh0KAUafrSXeWxJEdN_-2_YGiORX9OBxtqusnovH-TO1InvPSLkRB8704KSVI0k.ZRkXzzGGIe8MqEttEXGHDbkI-2UieD-G9E8J9ca8tA4&dib_tag=se&keywords=toilet%2Bpaper%2Bholder&qid=1749231108&refinements=p_123%3A394465&rnid=91049095031&s=home-improvement&sr=1-4&th=1" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹735</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/plantex-304-grade-toilet-paper-holder-bathroom-tissue-roll-oreva-chrome-stainless-steel/p/itmfe390d4c6b148?pid=TPHG3WXHP4582TEN&lid=LSTTPHG3WXHP4582TENNLDKSU&marketplace=FLIPKART&q=toilet+paper+holder&store=b8s%2Fecr%2Fl0e&srno=s_1_32&otracker=search&otracker1=search&fm=Search&iid=4f04b018-104c-401d-a3d3-bd5e6b8d1a16.TPHG3WXHP4582TEN.SEARCH&ppt=sp&ppn=sp&qH=dee6c4cbb030aa6b" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹699</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>

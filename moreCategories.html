@@ -1,0 +1,214 @@
+<html>
+<head>
+  <title>ProGuide - Product Guide</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #FFF8DC;
+      color: #333;
+    }
+
+    header {
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+      font-family: cursive;
+    }
+
+    .logo{
+      width:100px;
+      height:100px;
+      background-color: white;
+      color:#B8860B;
+      border-radius: 100%;
+      text-align: center;
+      font-size:80px;
+      font-family:monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap:wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+      font-family: cursive;
+    }
+
+    nav ul li a:hover {
+      color:rgb(227, 187, 27);
+    }
+
+    h2{
+      margin-top:50px;
+      margin-left: 50px;
+      font-size:45px;
+      text-align: center;
+      font-family: cursive;
+      font-weight: bold;
+      color:#dfa614;
+      text-shadow:2px 2px 2px black;
+    }
+
+    main.categories {
+      display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 34px;
+  padding: 50px 30px;
+  margin-top: 24px;
+    }
+
+    .category-card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(to right, #D4AF37, #B8860B);
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0px 16px #B8860B, 0 0px 16px rgba(244,126,0,84), 0 0px 16px yellow;
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .category-card h3 {
+      padding: 1rem;
+      font-family: cursive;
+      font-weight: bold;
+      font-size: 25px;
+      color:white;
+      background: linear-gradient(to right, #D4AF37, #B8860B);
+    }
+
+    footer {
+      background-color: #B8860B;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 4rem;
+      font-size: 25px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <h2> Categories </h2>
+    <main class="categories">
+      <a class="category-card" href="electronics.html">
+        <img src="./Images/ElectronicDevices.jpeg" alt="Electronic Devices">
+        <h3>Electronic Devices</h3>
+      </a>
+      <a class="category-card" href="furnitures.html">
+        <img src="./Images/Furniture.jpeg" alt="Furniture">
+        <h3>Furniture</h3>
+      </a>
+      <a class="category-card" href="kitchenEssentials.html">
+        <img src="./Images/KitchenEssentials.jpeg" alt="Kitchen Essentials">
+        <h3>Kitchen Essentials</h3>
+      </a>
+      <a class="category-card" href="furnishings.html">
+        <img src="./Images/Furnishings&Curtains.jpeg" alt="Furnishings Curtains">
+        <h3>Furnishings & Curtains</h3>
+      </a>
+      <a class="category-card" href="decoratives.html">
+        <img src="./Images/HomeDecoratives.jpeg" alt="Home Decoratives">
+        <h3>Home Decoratives</h3>
+      </a>
+      <a class="category-card" href="bathroomEssentials.html">
+        <img src="./Images/BathroomEssential.jpeg" alt="Bathroom Essentials">
+        <h3>Bathroom Essentials</h3>
+      </a>
+      <a class="category-card" href="Cleaning Suplies.html">
+        <img src="./Images/CleaningSupplies.jpeg" alt="Cleaning Supplies">
+        <h3>Cleaning Supplies</h3>
+      </a>
+      <a class="category-card" href="#">
+        <img src="./Images/Grocery.jpeg" alt="Grocery">
+        <h3>Grocery</h3>
+      </diav>
+      <a class="category-card" href="pharmacy.html">
+        <img src="./Images/Pharmacy.jpeg" alt="Pharmacy">
+        <h3>Pharmacy</h3>
+      </a>
+      <a class="category-card" href="#">
+        <img src="./Images/Stationary.jpeg" alt="Stationary">
+        <h3>Stationary</h3>
+      </a>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2025 ProGuide. All rights reserved.</p>
+</footer>
+</body>
+</html>

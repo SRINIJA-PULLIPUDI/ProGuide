@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Painting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+            background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+   header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+      font-family: cursive;
+    }
+
+  .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align:center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+      /* font-family: cursive; */
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1{
+      position: relative;
+    }
+    .app2{
+      position: relative;
+    }
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .shopping-links .amazon{
+      position: absolute;
+      top: 35px;
+      left:130px;
+      font-size:27px;
+    }
+
+    .shopping-links .flipcart{
+      position: absolute;
+      top: 38px;
+      left:130px;
+      font-size:27px;
+    }
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src= "./curtains.jpg" alt="Curtains"></center>
+      <div class="product-info">
+        <h2> Door Curtains  </h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong>Kraftiq Homes </p>
+        <p style="font-size: 25px;"><strong>Type:</strong> Living Room</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+       <a href=https://www.amazon.in/Kraftiq-Homes-Curtains-Curtain-Darkening/dp/B0BZLKW8VS/ref=sr_1_46?dib=eyJ2IjoiMSJ9.2SkwnqE5KW7rIPg6qAvaRUXwz6jmslEKCPfg_ywqE2kGjtxj4eV11GPAETvF9swCuGg1Jy8KPd6nod_opCKFYj80ha24QGRuWZoPDvT-LMBuRUoUzXxtEmEc50-Ixx5hZ-rdgZccuOiQkX44b5XZy83JKgb2vzrt65hhCvtFS9sFc7rmYaYh-bQcIbHvWg6Rt7ZRNcGGZcSILy_a9I-HMAHISb90G16J7zf7Qly7i1M5OejwKtbFz_SoIOb4VA97pLd0dHaXunmTxe-c0PBvF4IO7RAvxHdKB-cMZ3Di7yk.EzqB5tOFQuNp2rrOjCxVJJTgkPu-JXA_FtuhOnC-zT4&dib_tag=se&keywords=Kraftiq%2BHomes%2B152%2Bcm%2B(5%2Bft)%2BVelvet%2BRoom%2BDarkening%2BWindow%2BCurtain%2B(Pack%2BOf%2B2)%2B(Abstract%2C%2BGrey)&nsdOptOutParam=true&qid=1749192203&sr=8-46&th=1
+        target="_blank"><img src="./amazon.png" width="110" height="40" style="margin-top: 40px;"><span style="font-size: 30px; "> : ₹719</span></a>
+      </div>
+        <div class="app2">
+        <a href=https://www.flipkart.com/kraftiq-homes-152-cm-5-ft-velvet-room-darkening-window-curtain-pack-2/p/itmae33b5b133cf0?pid=CRNGA4SCHEZSHNVD&lid=LSTCRNGA4SCHEZSHNVDHA8YEK&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ACRNG2J6SW4WU3MAG%3Bl%3ALSTCRNG2J6SW4WU3MAGZ8T1F3%3Bpt%3App%3Buid%3A90c7e581-42a2-11f0-bb4c-abb20b3e2dc8%3B.CRNGA4SCHEZSHNVD&ppt=pp&ppn=pp&ssid=ap4lr93d800000001749192132694&otracker=pp_reco_Similar%2BProducts_4_36.productCard.PMU_HORIZONTAL_Kraftiq%2BHomes%2B152%2Bcm%2B%25285%2Bft%2529%2BVelvet%2BRoom%2BDarkening%2BWindow%2BCurtain%2B%2528Pack%2BOf%2B2%2529_CRNGA4SCHEZSHNVD_productRecommendation%2Fsimilar_3&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_4_NA_view-all&cid=CRNGA4SCHEZSHNVD
+        target="_blank"><img src="./flipcart.jpeg"width="110" height="40" style="margin-top: 40px;"><span style="font-size: 30px; "> : ₹478</span></a>
+        </div>       
+     </div>
+  </div>
+  </div>
+
+   <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>
+
+

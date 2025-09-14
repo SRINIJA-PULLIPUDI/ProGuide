@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Wall clock/title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: cursive;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+            background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+   header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+      font-family: cursive;
+    }
+
+  .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align:center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+       font-size: 23px;
+      /* font-family: cursive; */
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1{
+      position: relative;
+    }
+    .app2{
+      position: relative;
+    }
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .shopping-links .amazon{
+      position: absolute;
+      top: 35px;
+      left:130px;
+      font-size:27px;
+    }
+
+    .shopping-links .flipcart{
+      position: absolute;
+      top: 38px;
+      left:130px;
+      font-size:27px;
+    }
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./wall clock.webp" alt="wall clock"></center>
+      <div class="product-info">
+        <h2>JV Enterprises Decorative Latest Wall Clock</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Generic</p>
+        <p style="font-size: 25px;"><strong>Type:</strong> 	Analog</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+           <a href=https://www.amazon.in/Enterprises-Decorative-Classic-Kitchen-Bedroom/dp/B0CZP1V5PZ/ref=sr_1_44?crid=3JTFFWO2W8RJE&dib=eyJ2IjoiMSJ9.tqOZXR4IGK61LtsrgQc5joR-EFWatbsWT-WSFYmHrUbmh0uBaUwLzvSA5PVlwxEZz7bBNzJNXAenkLKyH98ZF7d4wqmAlUsRWOgLyewKTtbquDVIkGzrYKQggBfq7tOsHvhN67cbyBkj9tKuPQK6QzhqwL5IISIDGGJFGgTag_IqDYRI3FVwjpeFM20run8r20UyzG1s9gDmVNTR3YGbFzWGKnRugIsmgIyIfIu3OGD3U37dzl8maQPQva3jdnJ85ejqoJlQbREBb9ghvsFcuRHeiAV001xWEMp9FXPUJvM.CQeZwosciUFStD70IaSbvnS-kQxaErRT_MtEL-oMdVE&dib_tag=se&keywords=jv+enterprises+Analog+25.4+cm+X+25.4+cm+Wall+Clock+%28Black%2C+With+Glass%2C+Standard%29&nsdOptOutParam=true&qid=1749086416&sprefix=jv+enterprises+analog+25.4+cm+x+25.4+cm+wall+clock+black%2C+with+glass%2C+standard+%2Caps%2C254&sr=8-44 
+           target="_blank"><img src="C:\Users\musin\Desktop\code\amazom1.jpg" width="110" height="40" style="margin-top: 40px;"><span style="font-size: 30px; "> : ₹299</span></a>
+        </div>
+        <div class="app2">
+           <a href=https://www.flipkart.com/jv-enterprises-analog-25-4-cm-x-wall-clock/p/itmed1281f3be988?pid=WCKGZSSUJFR35M46&lid=LSTWCKGZSSUJFR35M46AQPKD2&marketplace=FLIPKART&q=wall+clock&store=arb%2Fkjw%2Fbm1&srno=s_1_32&otracker=search&otracker1=search&fm=Search&iid=en_Fq9ATDOuPrb3fc97x3uNP2AGuLFJldo2_YfUcHwevsviRVDsYj9vXqX60_PVUHJR8FCKjLYpBFZL51kacJ93fA%3D%3D&ppt=sp&ppn=sp&qH=fb10b55a3494de8e 
+           target="_blank"><img src="C:\Users\musin\Desktop\code\flipkart.jpeg"width="110" height="40" style="margin-top: 40px;"><span style="font-size: 30px; "> : ₹250</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>

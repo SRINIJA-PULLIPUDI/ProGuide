@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Plastic Chair</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      position: relative;
+    }
+
+    .title {
+      position: relative;
+      top: 20px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align: center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 16px;
+    }
+
+    .product-info h2 {
+      margin: 8px 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+    .shopping-links {
+      margin-top: 19.2px;
+      position: relative;
+    }
+
+    .app1, .app2 {
+      position: relative;
+    }
+
+    .shopping-links div {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 17.6px;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+    }
+
+    .shopping-links .amazon {
+      position: absolute;
+      top: 35px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links .flipcart {
+      position: absolute;
+      top: 38px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 16px;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 16px 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./furniture/pair plastic chairs.jpg"  alt="Nilkamal Plastic Chair" height="250px" width="300px"></center>
+      <div class="product-info">
+        <h2>Nilkamal Plastic Chair</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Nilkamal</p>
+        <p style="font-size: 25px;"><strong>Type:</strong> Plastic Chair with Armrest, Durable & Lightweight</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href=https://www.amazon.in/Nilkamal-Eeezy-Go-Plastic-Chair/dp/B0B1CDDFYP/ref=asc_df_B0B1CDDFYP?mcid=a6fff72f080c33c8b53c3c8f80956559&tag=googleshopdes-21&linkCode=df0&hvadid=709890480951&hvpos=&hvnetw=g&hvrand=4975172567914139121&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9147458&hvtargid=pla-1663797489810&psc=1&gad_source=1 target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹1,845</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href=https://www.flipkart.com/nilkamal-easy-go-chair-plastic-outdoor/p/itm2ebd0444f99da?pid=OTCFZTMEUW8BE3ME&lid=LSTOTCFZTMEUW8BE3ME93SJUL&marketplace=FLIPKART&store=wwe%2Fy7b%2Fbzv&srno=b_1_9&otracker=browse&fm=organic&iid=a69dd947-36b1-4107-a3c7-4a52e593c60c.OTCFZTMEUW8BE3ME.SEARCH&ppt=browse&ppn=browse&ssid=sjkcd913cw0000001749226917012 target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹2,440</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>

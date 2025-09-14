@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Washing Machine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      /* width: 100%; */
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+    }
+
+    .logo {
+      width: 90px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      /* text-align : center; */
+      border-radius: 100%;
+      padding-top: 2px;
+      padding-left: 30px;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1{
+      position: relative;
+    }
+    .app2{
+      position: relative;
+    }
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .shopping-links .amazon{
+      position: absolute;
+      top: 35px;
+      left:130px;
+      font-size:27px;
+    }
+
+    .shopping-links .flipcart{
+      position: absolute;
+      top: 38px;
+      left:130px;
+      font-size:27px;
+    }
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      ProGuide
+    </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="#">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="#">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="#">About</a></li>
+        <li><i class="fas fa-user"></i><a href="#">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./doubledoor_freeze.jpg" alt="Samsung Refrigerator"></center>
+      <div class="product-info">
+        <h2>Samsung 253L Double Door Refrigerator</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Samsung</p>
+        <p style="font-size: 25px;"><strong>Type:</strong> Frost Free, Double Door</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/Samsung-Inverter-Refrigerator-RT28C3032GS-HL/dp/B0BR3Z729L/ref=asc_df_B0BR3Z729L?mcid=1d5663915bc43da69c843113bae115da&tag=googleshopdes-21&linkCode=df0&hvadid=709856187081&hvpos=&hvnetw=g&hvrand=3196769391499232247&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9147461&hvtargid=pla-1965046599773&gad_source=1&th=1" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹27,990</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/samsung-253-l-frost-free-double-door-4-star-refrigerator/p/itmf3h7bzgdnwfhk?pid=RFRFFZGE2XYRTBBF&cmpid=product.share.pp&_refId=PP.da8a7438-b5f0-4ff2-8e20-211eb4f961eb.RFRFFZGE2XYRTBBF" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹28,990</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>

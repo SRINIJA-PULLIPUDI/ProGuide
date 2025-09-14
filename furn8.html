@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Painting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+            background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+   header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+      font-family: cursive;
+    }
+
+  .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align:center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+      /* font-family: cursive; */
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1{
+      position: relative;
+    }
+    .app2{
+      position: relative;
+    }
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .shopping-links .amazon{
+      position: absolute;
+      top: 35px;
+      left:130px;
+      font-size:27px;
+    }
+
+    .shopping-links .flipcart{
+      position: absolute;
+      top: 38px;
+      left:130px;
+      font-size:27px;
+    }
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./Bathroom Shelves.jpg"  alt="Bathroom Shelves"></center>
+      <div class="product-info">
+        <h2>Bathroom organiser</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong>Royal-Pro</p>
+        <p style="font-size: 25px;"><strong>Material:</strong>Stainless Steel</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+         <a href=https://www.amazon.in/Royal-Pro-Bathroom-Shelf-Wall-Corner/dp/B0D41KNH2X/ref=sr_1_1_sspa?crid=3V7I5SYEL9ESP&dib=eyJ2IjoiMSJ9.mwYtPz4hMhQnvqtMDYLkk-h22-d7tu4AXygk9BgeXXPbOpi9Sx2VIxvumrslv_9X4VWM3fS9LM1tmi-yRO5EscLgb7JI0EvcjzUqWsv9YfTCm342R-fpYc7sjI5sPW4qM6ZnA2QtMsMuU_f0JFp4VSSUPNz3Mhdu2kUTZGTpsEZ39ErDV8vSZhsuAmEOd4igYAFqu-B5umn4UaWhJUaWKZ4BXJ70rkrc0s6JPwD08sc5etLwT2fXeMKrS0GKv9UXaJ7H1Qj9D5MdQBDEwk1lUiUgHymsXn4ImGslD6qRiiw.OCdvCc9FWvrK1pLrWOQtt5TLV4JFdz-nvjbht06cydc&dib_tag=se&keywords=Royal-Pro%2BAdhesive%2BBathroom%2Borganiser%2Bwithout%2Bdrill%2BCorner%2BShelf%2BFor%2BWall%2BStainless%2BSteel%2BWall%2BShelf%2B(Number%2Bof%2BShelves%2B-%2B2%2C%2BGrey)&qid=1749209560&sprefix=royal-pro%2Badhesive%2Bbathroom%2Borganiser%2Bwithout%2Bdrill%2Bcorner%2Bshelf%2Bfor%2Bwall%2Bstainless%2Bsteel%2Bwall%2Bshelf%2Bnumber%2Bof%2Bshelves%2B-%2B2%2C%2Bgrey%2B%2Caps%2C374&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+          target="_blank"><img src="./amazon.png" width="110" height="40" style="margin-top: 40px;"><span style="font-size: 30px; "> : ₹898</span></a>
+        </div>
+        <div class="app2">
+        <a href=https://www.flipkart.com/royal-pro-adhesive-bathroom-organiser-without-drill-corner-shelf-wall-stainless-steel/p/itma08d5ac9d92dc?pid=RSFH5Z8BTW7FKW73&lid=LSTRSFH5Z8BTW7FKW73W8SHPO&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=en_JRnmaVu_w8ia9LsgOJMJYo9FxegaZVaunnpx_SgwxIJIP8szjWjiCsVYCo0nPAxxMY-kJJ7yjO7zKzgGxIPW_Q%3D%3D&ppt=pp&ppn=pp&ssid=j52w1wexqo0000001749209404010&otracker=pp_reco_Similar%2BProducts_2_37.productCard.PMU_HORIZONTAL_Royal-Pro%2BAdhesive%2BBathroom%2Borganiser%2Bwithout%2Bdrill%2BCorner%2BShelf%2BFor%2BWall%2BStainless%2BSteel%2BWall%2BShelf_322805253_productRecommendation%2Fsimilar_1&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_2_NA_view-all&cid=322805253
+        target="_blank"><img src="./flipcart.jpeg"width="110" height="40" style="margin-top: 40px;"><span style="font-size: 30px; "> : ₹908</span></a>
+         </div>      
+    </div>
+  </div>
+  </div>
+
+   <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+

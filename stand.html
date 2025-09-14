@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Kitchen Rack</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+      font-family: cursive;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align:center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+      font-family: cursive;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1{
+      position: relative;
+    }
+    .app2{
+      position: relative;
+    }
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .shopping-links .amazon{
+      position: absolute;
+      top: 35px;
+      left:130px;
+      font-size:27px;
+    }
+
+    .shopping-links .flipcart{
+      position: absolute;
+      top: 38px;
+      left:130px;
+      font-size:27px;
+    }
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./Images/stand.jpeg" alt="Kitchen Rack"></center>
+      <div class="product-info">
+        <h2>Winstar Containers Kitchen Rack Steel High Grade Stainless Steel</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Winstar</p>
+        <p style="font-size: 25px;"><strong>Type:</strong> Kitchen Rack</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/WINSTAR-Stainless-Perforated-Kitchen-Organizer/dp/B07M8Y4BCB/ref=sr_1_1?crid=1BBS2D12TOFUL&dib=eyJ2IjoiMSJ9.5OJIcK2BcZooAfClfRtzWSAJY_3nDVUUpPBFMTEQEjWfQFFhVapQmHtxzJlqvklR6ClPhFZeFTCJDiqG37MedlPnLfqB6Qc2wqisK4ijJUHRag9Nq-BykmmtT3UvBN-tbORHB0bL25Hzgz1LoWOOr-oSrA_OvMUpCvccbzhJYNY_y2kRFD0pDyFJ2DdBOE1c3f-LTCZtnEL5LJRtOURsj_vsKb1nwZzEWdo3SMCliXKK4rlOADDlG9MRyFRHAp2NYDQ20oOlmCjn7-qBISeRMSboN-Y9NKB4gm7LlIjF0co.VtG6X2gPCzRNoNGLam9Vhn0oCR7teFt2yg4OB_wx8qI&dib_tag=se&keywords=Winstar+Containers+Kitchen+Rack+Steel+High+Grade+Stainless+Steel+Kitchen+Plate+Basket+%7C+Kitchen+Organizer+Rack+%7C+Modular+Kitchen+Cabinet+%2819W+x+20D+x+6H+inches%29&qid=1749161340&sprefix=bowls+stand%2Caps%2C1640&sr=8-1" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹2,195</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/winstar-containers-kitchen-rack-steel-high-grade-stainless-plate-basket-organizer-modular-cabinet-19w-x-20d-6h-inches/p/itm274d4e0583f95?pid=KRKG2FMZ4F6HNZGG&lid=LSTKRKG2FMZ4F6HNZGGOZZO97&marketplace=FLIPKART&q=WROPZO+Kitchen+Cabinet%2C+Plate+Organizers+For+Cabinets%2C+Adjustable+Cupboard+Pegboard+Tray%2C+Dish+Racks+Bowl+Drying+Racks%2C+Expandable+Plate+Holders+Storage%2C+45+X+15+X+10+Cm%2C+Grey&store=upp%2F5ix%2Ftlu&srno=s_1_27&otracker=search&otracker1=search&fm=Search&iid=bbf701fe-5496-45c3-ab4c-c5e86d05fbab.KRKG2FMZ4F6HNZGG.SEARCH&ppt=sp&ppn=sp&ssid=sul7scstz40000001749161170221&qH=9e2cc08833a125e6" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹1,505</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ProGuide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

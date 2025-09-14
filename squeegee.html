@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Squeegee</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      position: relative;
+    }
+
+    .title {
+      position: relative;
+      top: 20px;
+      font-family: cursive;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align: center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-family: cursive;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1, .app2 {
+      position: relative;
+    }
+
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .shopping-links .amazon {
+      position: absolute;
+      top: 35px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links .flipcart {
+      position: absolute;
+      top: 38px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./squeegee.jpg" alt="Squeegee - Floor Cleaner Wiper"></center>
+      <div class="product-info">
+        <h2>Squeegee</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Scotch-Brite</p>
+        <p style="font-size: 25px;"><strong>Type:</strong> Floor Wiper Squeegee - Plastic Handle</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/Scotch-Brite-Plastic-Squeegee-telescopic-handle/dp/B00NBM3EH0/ref=sr_1_3?dib=eyJ2IjoiMSJ9.29lccyZxWepa7wsS07coNxmG33KCsoGX0O-CFgWDSFtWSQr1Y5Bp4TwHA2eQvuErg1miFiQB2KubVN_lBHtitWSbpZ1S_D_FOP6mtEzkdM-QUuaBfQa2sal3TtdFeRRYBKqKEo34r5uDm2QcvbK0H-gI-PlnG9l9_Ovuv3w0aWP029zJU5x6vTdG6y7r9opRYj5nPTMObcm43kPedu71E_6I0ASx6v8eqkOxZ0JpE0lGFCTfVF33xBI_RCdMJONSc21kgZY8vaQE1xJipX3JskrCXVvlRweCZhqSVhCFqJY.oN95VDzfWhItgzrmP_1t9rPrWjdoafA2MSRPjoPAPxo&dib_tag=se&keywords=squeegee&qid=1749261673&refinements=p_123%3A237711&rnid=91049095031&s=kitchen&sr=1-3&th=1" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹475</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/scotch-brite-bathroom-squeegee-floor-wiper-having-fixed-handle/p/itm54e6716ecf1d9?pid=MCWEW2CYSWYATSJ2&lid=LSTMCWEW2CYSWYATSJ2IPUJMZ&marketplace=FLIPKART&q=squeegee&store=rja&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=616a0d74-6ca8-48ba-8f38-f97233a82f6d.MCWEW2CYSWYATSJ2.SEARCH&ppt=sp&ppn=sp&ssid=cbknv1wqkw0000001749261586986&qH=f346303d5885ec7a" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹399</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>

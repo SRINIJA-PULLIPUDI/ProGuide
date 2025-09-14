@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>ProGuide - Product Guide</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    
+
+    body {
+      font-family: Cursive;
+      background-color:  #FFF8DC;
+      color:  #333;
+      
+    }
+
+    header {
+      width: 100%;
+      background-color:  #B8860B;
+      color: #fff;
+      padding: 4px 4px 50px 5px;
+      box-shadow: 3px 12px 9px rgba(0, 0, 0, 0.2);
+      border-radius: 2%;
+      
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+      font-family: cursive;
+    }
+
+    .logo{
+      width:100px;
+      height:100px;
+      background-color: white;
+      color:#B8860B;
+      border-radius: 100%;
+      text-align: center;
+      font-size:80px;
+      font-family:monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    header div {
+      font-size: 28px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: right;
+
+      gap:30px;
+      margin-top: 1rem;
+      cursor: pointer;
+      padding: 10px;
+      margin-right: 5%;
+      
+    }
+
+    header h1 {
+      font-size: 68px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+       margin-left: 12%; 
+       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    
+    header div span{
+      /* border: 1px solid white; */
+      background-color: white;
+      color:#B8860B;
+      border-radius: 5px;
+      padding: 2px 4px 2px 4px;
+     
+    }
+    header div span span{
+      /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+
+    } 
+  
+    .icons a:hover{
+      color: white;
+      background-color: #B8860B;
+    }
+
+    .categoryCard:hover {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* stronger on hover */
+      transform: scale(1.03);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 2rem;
+      color: var(--gold-dark);
+      border-bottom: 3px solid var(--gold);
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      text-shadow: 2px 2px 2px black;
+
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 34px;
+      margin-top: 24px;
+    }
+    .moreCircle{
+      padding: 95px 0px;
+    }
+    .categoryCard {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+      /* transition: transform 0.3s, box-shadow 0.3s; */
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .categoryCard:hover {
+      /* transform: translateY(-6px); */
+      box-shadow: 0 0px 16px #B8860B,0 0px 16px rgb(244, 126,0, 84),0 0px 16px yellow;
+    }
+
+    .categoryCard img {
+      width: 100%;
+      height: 180px;
+      /* object-fit: cover; */
+      margin-top:3px ;
+    }
+
+    .categoryCard h3 {
+      padding: 10px;
+      margin:10px;
+      font-size: 25px;
+      font-family: cursive;
+      background-color: rgb(227, 187, 27);
+      color: white;
+    }
+
+    .categoryCard moreCard{
+      border: 2px solid black;
+      border-radius: 100%;
+    }
+
+    footer {
+      background-color: var(--gold-dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 4rem;
+      font-size: 25px;
+    }
+    .icons span:hover{
+      color:#fff;
+      background-color: #B8860B;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card-link {
+      text-decoration: none;
+    }
+
+    .card {
+      background: linear-gradient(to bottom, rgb(227,187,27), #FFEC8B);
+      overflow: hidden;
+      height: 350px;
+      aspect-ratio: 1 / 1;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2px;
+      transition: transform 0.2s ease;
+      color: #000;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      background-size: contain;
+      object-fit: cover;
+    }
+
+    /* .card-text {
+      margin-top: 10px;
+    } */
+
+    .card-text .brand {
+      
+      font-size: 0.rem;
+      color: #333;
+      position: relative;
+      /* margin: 2px 0; */
+    }
+
+    .card-text .title {
+      font-size: 1rem;
+      font-weight: bold;
+      top:-15px;
+      /* margin: 4px 0; */
+    }
+
+    .card-text .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #d32f2f;
+      position:relative;
+      top:-20px;
+      /* margin: 4px 0; */
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <sp class="name">
+      <sp class="logo"> P </sp>
+      <sp class="title">ProGuide</sp>
+    </sp>
+  <div>
+    <div class="icons">
+      <a href="home.html" style="text-decoration: none;">
+        <span><i class="fas fa-home"></i> <span>Home</span></span>
+      </a>
+      <a href="moreCategories.html" style="text-decoration: none;">
+        <span><i class="fas fa-list-alt"></i> <span>Categories</span></span>
+      </a>
+      <a href="about.html" style="text-decoration: none;">
+        <span><i class="fas fa-info-circle"></i> <span>About</span></span>
+      </a>
+      <a href="profile.html" style="text-decoration: none;">
+        <span><i class="fas fa-user-circle"></i> <span>Profile</span></span>
+      </a>
+      <a href="help.html" style="text-decoration: none;">
+        <span><i class="fas fa-question-circle"></i> <span>Help</span></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div>
+  <h2>Flash Deals</h2>
+  <div class="card-grid">
+    <a href="https://www.amazon.in/stores/page/0E696CB1-04CB-4350-A588-2465FB386817/?_encoding=UTF8&store_ref=SB_A071052522BC8IRS0WGAM-A04952641EXO5HJVP4SIV&pd_rd_plhdr=t&aaxitk=05d079f0ab166afc5ab3d72381f6ad3f&hsa_cr_id=0&lp_asins=B0BZ12FPM1%2CB0B8ZMLRH4%2CB0CX4PY3WR&lp_query=flash%20deals%20on%20haier%20fridge&lp_slot=auto-sparkle-hsa-tetris&ref_=sbx_be_s_sparkle_lsi4d_ls_dpc&pd_rd_w=fmfif&content-id=amzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f%3Aamzn1.sym.5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_p=5e94cbee-68a7-46b5-b2e9-bb5445edd00f&pf_rd_r=CBDP3Q0ZKZ8Q91VBXF5E&pd_rd_wg=ngFXu&pd_rd_r=46c70799-986e-4b1c-8227-43c74fcca0cd" target="_blank" class="card-link">
+      <div class="card">
+        <img src="/Images/haier.jpeg" alt="Haier" />
+        <div class="card-text">
+          <p class="brand">Haier</p>
+          <p class="title">Refrigerator</p>
+          <p class="price">From ₹10,990</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.amazon.in/s?k=flash+deals+on+bathroom+essentials&crid=3GUIKIU3AL4MF&sprefix=flash+deals+on+bathroom%2Caps%2C4375&ref=nb_sb_noss" target="_blank" class="card-link">
+      <div class="card">
+        <img src="/Images/broom.jpeg" alt="Bathroom Essentials" height="10px"/>
+        <div class="card-text">
+          <p class="brand">Bathroom Cleanings, Metal Organisers, Air Freshener</p>
+          <p class="title">Bathroom Essentials</p>
+          <p class="price">From ₹249</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.amazon.in/s?k=flash+deals+on+home+decoratives&ref=nb_sb_noss" target="_blank" class="card-link">
+      <div class="card">
+        <img src="/Images/decorative.jpeg" alt="Decoratives" />
+        <div class="card-text">
+          <p class="brand">Stickers for Walls, Hangings, Paintings</p>
+          <p class="title">Home Decoratives</p>
+          <p class="price">From ₹149</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.flipkart.com/home-furnishing/curtains-accessories/curtains/~cs-ywu9m97e21/pr?sid=jra,sl5,2va" target="_blank" class="card-link">
+      <div class="card">
+        <img src="/Images/curtain.jpeg" alt="Curtain" />
+        <div class="card-text">
+          <p class="brand">Fashion Curtains</p>
+          <p class="title">Curtains</p>
+          <p class="price">From ₹199</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.flipkart.com/search?q=flash%20deals%20on%20furniture&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" target="_blank" class="card-link">
+      <div class="card">
+        <img src="/Images/coffeetable.jpeg" alt="Furniture" />
+        <div class="card-text">
+          <p class="brand">Coffee Tables, Desk Work, Hudraulic Bed</p>
+          <p class="title">Furnitures</p>
+          <p class="price">From ₹693</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.flipkart.com/search?q=flash%20deals%20on%20dinner%20set&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" target="_blank" class="card-link">
+      <div class="card">
+        <img src="/Images/foodplate.jpeg" alt="Plates" />
+        <div class="card-text">
+          <p class="brand">Plates, Dinner Sets</p>
+          <p class="title">Kitchen Essentials</p>
+          <p class="price">From ₹199</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+   
+  <div>
+    <h2>Top Categories</h2>
+    <div class="categories">
+  <a href="electronics.html" style="text-decoration: none;">
+    <div class="categoryCard">
+      <img src="./electonic.jpeg" alt="Electronic Devices" />
+      <h3>Electronic Devices</h3>
+    </div>
+  </a>
+  
+  <a href="furniture.html" style="text-decoration: none;">
+    <div class="categoryCard">
+      <img style="margin-top:10px" src="./download.jpeg" alt="Furniture" />
+      <h3>Furniture</h3>
+    </div>
+  </a>
+  
+  <a href="decoratives.html" style="text-decoration: none;">
+    <div class="categoryCard">
+      <img src="./decoratives.jpeg" alt="Home Decoratives" />
+      <h3>Home Decoratives</h3>
+    </div>
+  </a>
+  
+  <a href="curtains.html" style="text-decoration: none;">
+    <div class="categoryCard">
+      <img src="./curtains.jpeg" alt="Furnishings Curtains" />
+      <h3>Curtains</h3>
+    </div>
+  </a>
+  
+  <a href="bathroom.html" style="text-decoration: none;">
+    <div class="categoryCard">
+      <img src="./washroomessential.jpeg" alt="Bathroom Essentials" />
+      <h3>Bathroom Needs</h3>
+    </div>
+  </a>
+  
+  <a href="kitchen.html" style="text-decoration: none;">
+    <div class="categoryCard">
+      <img src="./kitchen.jpeg" alt="Kitchen Needs"/>
+      <h3>Kitchen Needs</h3>
+    </div>
+  </a>
+  
+  <a href="cleaning.html" style="text-decoration: none;">
+    <div class="categoryCard">
+      <img src="./homeClean.jpeg" alt="Cleaning Supplies" />
+      <h3>Cleaning Supplies</h3>
+    </div>
+  </a>
+
+  <a href="moreCategories.html" style="text-decoration: none;">
+  <div class="categoryCard">
+    <div class="moreCircle">
+      
+   
+    <h3>More Categories</h3>
+     </div>
+  </div>
+</a>
+</div>
+
+  </div>
+
+  
+  <footer>
+    <p>&copy; 2025 ProGuide. All rights reserved.</p>
+  </footer>
+</body>
+</html>

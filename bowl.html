@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Bowl</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+      font-family: cursive;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align:center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+      font-family: cursive;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 1rem;
+    }
+
+    .product-info h2 {
+      margin: 0.5rem 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+
+    .shopping-links {
+      margin-top: 1.2rem;
+      position: relative;
+    }
+
+    .app1{
+      position: relative;
+    }
+    .app2{
+      position: relative;
+    }
+    .shopping-links div {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .shopping-links .amazon{
+      position: absolute;
+      top: 35px;
+      left:130px;
+      font-size:27px;
+    }
+
+    .shopping-links .flipcart{
+      position: absolute;
+      top: 38px;
+      left:130px;
+      font-size:27px;
+    }
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 1rem 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./Images/bowl.jpeg" alt="Bowl"></center>
+      <div class="product-info">
+        <h2>Nirlon Ceramic Non-Stick Aluminium Induction Friendly Cooking Kadhai,3.1 Liter, Orange</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> Nirlon</p>
+        <p style="font-size: 25px;"><strong>Type:</strong> Cooking Kadhai</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/Ceramic-Non-Stick-Aluminium-Induction-Friendly/dp/B085WRZT3G/ref=sr_1_5?crid=2E28ANUPD0TI&dib=eyJ2IjoiMSJ9.hcFoRZ6kr2WF4x1w4hwen8_tHbrn272wAN2e9y1-cG4LAzUzPJggeE559yAky1eWqKIz86xGaDQvI_vrg1GKWhYe48q82IRmGxIN2CjMb5qz6Ae9BuwaXDhYSif855s1v1FDeE83NoBLV7XVKBCgWwUWB1oJh8uvaGvigtE5T82cKmy37SLhz-KcgCFoOHtCQbkna3Yaeku2qgTycIZOBZG6enX22i-bv2U8qdsIERK-RcinVUm8ruffK3du1LsO0p5CxLpBOAFDJ4JUIBKSFNPZplcQeRZP8fDTYEt5qzQ._kkxG_hh-H-pwScOlFZTeRB6eQu8TuUDggQM3QtOViI&dib_tag=se&keywords=NIRLON%2BCeramic%2BNon-Stick%2BAluminium%2BInduction%2BFriendly%2BCooking%2BKadhai%2C3.1%2BLiter%2C%2BOrange%2BKadhai%2B24%2Bcm%2Bdiameter%2Bwith%2BLid%2B3.1%2BL%2Bcapacity%2B(Aluminium%2C%2BNon-stick%2C%2BInduction%2BBottom)&qid=1749157729&sprefix=closed%2Blid%2Bbowl%2Bfor%2Bcooking%2Caps%2C1794&sr=8-5&th=1" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹1,389</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/nirlon-ceramic-non-stick-aluminium-induction-friendly-cooking-kadhai-3-1-liter-orange-kadhai-24-cm-diameter-lid-3-1-l-capacity/p/itmc42923480857b?pid=PTPFSXUSTF5APRZK&lid=LSTPTPFSXUSTF5APRZKOWSPAW&marketplace=FLIPKART&q=Ember+Cookware+Arcilla+Ceramic+Non+Stick+Kadai+24cm+%7C+Glass+lid+%7C+Matching+Handles+%7C+1x+Spatula+%7C+Induction+Safe+%7C+Non+Toxic+Deep+Frying+Pan+%7C+PFAS+%26+PTFE+Free+%7C+Florence+Series+%7C+Green&store=upp%2Ftnx&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=7697a536-1543-4a39-bfa8-e21e3814bb97.PTPFSXUSTF5APRZK.SEARCH&ppt=sp&ppn=sp&ssid=uw6dkjek740000001749157553508&qH=05842bb22984b80a" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹795</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ProGuide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

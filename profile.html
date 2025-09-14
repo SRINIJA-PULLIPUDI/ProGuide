@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile - ProGuide</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      font-family: Cursive;
+      background-color: var(--ivory);
+      color: var(--text-dark);
+      margin: 0;
+    }
+
+   
+    header {
+      /* width: 100%; */
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap:50px;
+      position: relative;
+    }
+
+    .title{
+      position: relative;
+      top:20px;
+    }
+   .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align:center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+  }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+    .profile-container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .profile-container h2 {
+      text-align: center;
+      font-size: 42px;
+      color: var(--gold-dark);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      margin-bottom: 1.5rem;
+    }
+
+    .profile-info {
+      font-size: 22px;
+      line-height: 1.8;
+    }
+
+    .profile-info p {
+      margin: 12px 0;
+    }
+
+    .profile-info strong {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      background-color: var(--gold-dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 10px 10px;
+      font-size: 20px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .icons span:hover {
+      color: #fff;
+      background-color: #B8860B;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+   
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="profile-container">
+    <h2>User Profile</h2>
+    <div class="profile-info">
+      <p><strong>Name:</strong> John Doe</p>  
+      <p><strong>Email:</strong> johndoe@example.com</p>
+      <p><strong>Username:</strong> johndoe123</p>
+      <p><strong>Preferences:</strong> Electronics, Furniture, Kitchen Essentials</p>
+      <!-- <p><strong>Bio:</strong> Passionate about home improvement and smart shopping. I use ProGuide to find the best deals and product insights across categories.</p> -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ProGuide. All rights reserved.</p>
+  </footer>
+</body>
+</html>

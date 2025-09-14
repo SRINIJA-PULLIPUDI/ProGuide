@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Old Wood Chair</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      position: relative;
+    }
+
+    .title {
+      position: relative;
+      top: 20px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align: center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 16px;
+    }
+
+    .product-info h2 {
+      margin: 8px 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+    .shopping-links {
+      margin-top: 19.2px;
+      position: relative;
+    }
+
+    .app1, .app2 {
+      position: relative;
+    }
+
+    .shopping-links div {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 17.6px;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+    }
+
+    .shopping-links .amazon {
+      position: absolute;
+      top: 35px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links .flipcart {
+      position: absolute;
+      top: 38px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 16px;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 16px 0;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./furniture/old wood chair.jpg" alt="Antique Wooden Chair" height="250px" width="300px"></center>
+      <div class="product-info">
+        <h2>Antique Old Wooden Chair</h2>
+        <p style="font-size: 25px;"><strong>Material:</strong> Solid Teak Wood</p>
+        <p style="font-size: 25px;"><strong>Style:</strong> Vintage Handcrafted, High Back</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href=https://www.amazon.in/Credenza-Sheesham-Cushioned-Assembly-Required/dp/B0F27WXQM4/ref=sr_1_58_sspa?crid=3VAMV7E5LKVTF&dib=eyJ2IjoiMSJ9.qKphwZEPXRRHuBF0ZqrVbLajb6NH6niLCFxZBDMzsxDGLVnSenkgnWzcqAmTfffzBzTBqhkg1B5WOTAk2tRwqWsj6eD-kGVwXf8uXLffsK12diFGEZTv5qApjES03eTURIB7Kw6mO58r8gQu_BB6EkY31ekDE7j0K3dVAczaNdpYzygRAT1vJ-pOHDhF_zJt8ccxfDJhiDt4tI28KKw7eigjb9SWNV48_nDQYT6Y7wnELIMuq6kLfNd3sJ1Jsg3tBtwxggquRIuA49Oq69kS55TVxu0EIuRx0CSx2d9FMqI.RlmGiN3-g7GMcSHt6aPLUexz1ByE7qbv6FdjwJoEnic&dib_tag=se&keywords=Sarswati+Furniture+Premium+Quality+Wooden+Dining+Chair%2FStudy%2FOffice+Chair+In+Sheesham+Wood+Solid+Wood+Dining+Chair+%28Set+of+2%2C+Finish+Color+-+Teak%29+431+Ratings+%26+5+Reviews&nsdOptOutParam=true&qid=1749228472&sprefix=sarswati+furniture+premium+quality+wooden+dining+chair%2Fstudy%2Foffice+chair+in+sheesham+wood+solid+wood+dining+chair+set+of+2%2C+finish+color+-+teak+431+ratings+%26+5+reviews%2Caps%2C344&sr=8-58-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&psc=1 target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹5,864</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href=https://www.flipkart.com/credenza-sheesham-dining-chair-set-2-honey-finish-solid-wood/p/itm3231e937e2508?pid=DNCG2XQQ2CYAJUJX&lid=LSTDNCG2XQQ2CYAJUJXWWDVYX&marketplace=FLIPKART&q=Credenza+Sheesham+Wooden+Dining+Chairs+Set+of+2+%7C+Solid+CNC+Wood+Chairs+with+Cushioned+Seats+for+Dining+Room%2C+Living+Room+%26+Office+%7C+Elegant+Honey+Finish%2C+No+Assembly+Required&store=wwe&srno=s_1_7&otracker=search&otracker1=search&fm=Search&iid=85130178-c199-445a-ba9e-fb56cc8e9ee8.DNCG2XQQ2CYAJUJX.SEARCH&ppt=sp&ppn=sp&ssid=mokuno6d800000001749228542386&qH=d8890c54aa6a94ac target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹8,999</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>

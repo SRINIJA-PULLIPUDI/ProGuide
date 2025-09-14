@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ProGuide - Microwave Oven</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-dark: #B8860B;
+      --ivory: #FFF8DC;
+      --text-dark: #333;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--ivory);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: #B8860B;
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      box-shadow: 0px 0px 5px 5px wheat;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header .name {
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      position: relative;
+    }
+
+    .title {
+      position: relative;
+      top: 20px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      color: #B8860B;
+      border-radius: 100%;
+      text-align: center;
+      font-size: 80px;
+      font-family: monospace;
+      text-shadow: 5px 5px 1px #f0b216;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      font-size: 23px;
+    }
+
+    nav ul li a:hover {
+      color: rgb(227, 187, 27);
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px;
+    }
+
+    .product-card {
+      background: var(--text-light);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 24px;
+      max-width: 600px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-info {
+      margin-top: 16px;
+    }
+
+    .product-info h2 {
+      margin: 8px 0;
+      color: var(--gold-dark);
+      font-size: 30px;
+    }
+
+    .shopping-links {
+      margin-top: 19.2px;
+      position: relative;
+    }
+
+    .app1, .app2 {
+      position: relative;
+    }
+
+    .shopping-links div {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 17.6px;
+    }
+
+    .shopping-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+    }
+
+    .shopping-links .amazon {
+      position: absolute;
+      top: 35px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links .flipcart {
+      position: absolute;
+      top: 38px;
+      left: 130px;
+      font-size: 27px;
+    }
+
+    .shopping-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    footer {
+      margin-top: 16px;
+      text-align: center;
+      background: var(--gold-dark);
+      color: var(--text-light);
+      padding: 16px 0;
+      font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="name">
+      <div class="logo"> P </div>
+      <div class="title">ProGuide</div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="home.html">Home</a></li>
+        <li><i class="fas fa-list"></i><a href="moreCategories.html">Categories</a></li>
+        <li><i class="fas fa-info-circle"></i><a href="about.html">About</a></li>
+        <li><i class="fas fa-user"></i><a href="profile.html">Profile</a></li>
+        <li><i class="fas fa-question-circle"></i><a href="help.html">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="product-container">
+    <div class="product-card">
+      <center><img src="./microoven2.jpg" alt="IFB Microwave Oven"></center>
+      <div class="product-info">
+        <h2>IFB 30 L Convection Microwave Oven</h2>
+        <p style="font-size: 25px;"><strong>Brand:</strong> IFB</p>
+        <p style="font-size: 25px;"><strong>Type:</strong> Convection, 30 Litres</p>
+      </div>
+
+      <div class="shopping-links">
+        <div class="app1">
+          <a href="https://www.amazon.in/IFB-Convection-Microwave-30BRC2-Black/dp/B016ZLKJSU/ref=sr_1_3?adgrpid=59214864456&dib=eyJ2IjoiMSJ9.Nr8aQF8FzfaWrj8O3jKBdsyNRmRPokPLIt2b2A0dX8GPrLIHNVYrqJJb4_IZVgyILApv6zrU-Z77ycGb8mg2FmdCLAPYL4F8vPEjWAeEaBCRlUAQE7LSW9QQ4kWJPALPoylQMhnbnxlkODhs94zxn6U9JryZJCcmcDw_mVDzdVIbkSAgo4UrF72QvU0m26AGAIyzI2elTLDxpq5rhKNhuCpGfAFrT93ZpQVOTOEPmtE.48dljnnqqiEbymQLqZVm8Xs3WXlHw_gAmlL2XrsptOI&dib_tag=se&ext_vrnc=hi&hvadid=590749987815&hvdev=c&hvlocphy=9181884&hvnetw=g&hvqmt=e&hvrand=3483384215171265849&hvtargid=kwd-361211914530&hydadcr=8779_2211292&keywords=ifb+30l+convection+microwave+oven&mcid=6208eb16f9ed3f4691e5be5246e6dafe&nsdOptOutParam=true&qid=1749199784&sr=8-3" target="_blank">
+            <img src="./amazon.png" width="110" height="40" style="margin-top: 40px;">
+            <span class="amazon">: ₹14,490</span>
+          </a>
+        </div>
+        <div class="app2">
+          <a href="https://www.flipkart.com/ifb-30-l-convection-microwave-oven/p/itmd607412b4f3e1" target="_blank">
+            <img src="./flipcart.jpeg" width="110" height="40" style="margin-top: 40px;">
+            <span class="flipcart">: ₹13,490</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ProGuide | All rights reserved
+  </footer>
+
+</body>
+</html>
