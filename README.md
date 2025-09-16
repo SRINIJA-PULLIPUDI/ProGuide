@@ -59,7 +59,7 @@ Used for styling and design, including colors, fonts, spacing, alignment, respon
 
 To run this project locally, you may follow these general steps:
 
-1. Clone the repository:
+- Clone the repository:
    
    git clone https://github.com/srinija-pullipudi/ProGuide.git
 
